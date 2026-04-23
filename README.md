@@ -15,6 +15,11 @@ This repository contains **documentation and diagrams only**. It does **not** in
 
 The static **visitor-facing** site is publicly available at **https://oba.atastc.com** (content and branding are deployment-specific).
 
+### Mobile app store links
+
+- App Store (iOS): https://apps.apple.com/us/app/oba-asistan/id6759215693
+- Play Store (Android): https://play.google.com/store/apps/details?id=com.appsorcerer.moyak
+
 ### Admin panel
 
 There is **no public demo URL or credentials** in this repo. **Screenshots** illustrate the admin experience. For qualified inquiries, a **separate demo** (link + access) may be provided **on request** — never committed here.
@@ -36,15 +41,9 @@ See [docs/CAPABILITIES_OVERVIEW.md](docs/CAPABILITIES_OVERVIEW.md).
 See [docs/WHITE_LABEL_CHECKLIST.md](docs/WHITE_LABEL_CHECKLIST.md).
 Buyer onboarding steps: [docs/CUSTOMER_ONBOARDING.md](docs/CUSTOMER_ONBOARDING.md).
 
-### Safe sync process (private -> public)
-
-See [docs/SHOWCASE_SYNC_WORKFLOW.md](docs/SHOWCASE_SYNC_WORKFLOW.md).
-Release rhythm and commit format: [docs/SHOWCASE_RELEASE_POLICY.md](docs/SHOWCASE_RELEASE_POLICY.md).
-
-### Commercial models (draft — legal review required)
+### Commercial models
 
 See [docs/COMMERCIAL.md](docs/COMMERCIAL.md).
-Repository metadata checklist: [docs/REPO_METADATA_GUIDE.md](docs/REPO_METADATA_GUIDE.md).
 
 ### Security notice
 
@@ -63,6 +62,11 @@ Burada yalnızca **dokümantasyon ve şemalar** vardır; **uygulama kaynak kodu*
 
 Statik **herkese açık** site: **https://oba.atastc.com** (içerik ve marka kuruluma göre değişir).
 
+### Mobil mağaza bağlantıları
+
+- App Store (iOS): https://apps.apple.com/us/app/oba-asistan/id6759215693
+- Play Store (Android): https://play.google.com/store/apps/details?id=com.appsorcerer.moyak
+
 ### Yönetim paneli
 
 Bu repoda **canlı demo adresi veya giriş bilgisi yoktur**. Yönetim deneyimi **ekran görüntüleri** ile anlatılır. Uygun taleplerde **ayrı demo** (link + erişim) **talep üzerine** verilebilir; buraya asla yazılmaz.
@@ -80,10 +84,9 @@ Bkz. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 Bkz. [docs/WHITE_LABEL_CHECKLIST.md](docs/WHITE_LABEL_CHECKLIST.md).
 Müşteri onboarding adımları: [docs/CUSTOMER_ONBOARDING.md](docs/CUSTOMER_ONBOARDING.md).
 
-### Ticari modeller (taslak — hukuk onayı gerekir)
+### Ticari modeller
 
 Bkz. [docs/COMMERCIAL.md](docs/COMMERCIAL.md).
-Repo metadata kontrolü: [docs/REPO_METADATA_GUIDE.md](docs/REPO_METADATA_GUIDE.md).
 
 ### Güvenlik
 
@@ -94,7 +97,7 @@ Yayın kapsamı ve güvenlik sınırları için bkz. [docs/SECURITY_SCOPE_MATRIX
 
 ## Screenshots
 
-Place anonymised PNGs under `assets/screenshots/` and list them in [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md).
+Optional. If you want to include them, place anonymised PNGs under `assets/screenshots/` and list them in [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md).
 
 ---
 

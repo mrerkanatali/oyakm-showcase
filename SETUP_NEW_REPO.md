@@ -1,46 +1,32 @@
-# Yeni boş GitHub reposuna aktarma — komutlar
+# Showcase repository setup
 
-Bu dosya yalnızca talimat içindir; ana `oyakm` reposuna commit etmeyin. Paketi **ayrı public repo**da yayınlayacaksınız.
+This file helps initialize or refresh a public showcase repository.
 
-## 1) GitHub’da
+## 1) Create a new empty GitHub repository
 
-1. Yeni **boş** repository oluşturun (ör. `oyakm-showcase`, public).
-2. README / .gitignore / license **eklemeyin** (repo tamamen boş kalsın).
+1. Create a new **empty** repository (for example, `oyakm-showcase`, public).
+2. Do not pre-add README, license, or gitignore.
 
-## 2) Yerelde (paketi kopyalayıp ilk push)
+## 2) Local setup and first push
 
 ```bash
-# Örnek: üst klasörde yeni klasör
-cd /Volumes/destek/projects
-cp -R oyakm/showcase-public-pack oyakm-showcase
+# Example local flow
+mkdir oyakm-showcase
 cd oyakm-showcase
 
 git init
 git branch -M main
 git add .
-git status   # kontrol: gizli dosya yok
+git status
 git commit -m "docs(showcase): initial public sanitized pack (EN+TR, no secrets)"
 
-git remote add origin git@github.com:KULLANICI/oyakm-showcase.git
+git remote add origin git@github.com:<YOUR_USER>/oyakm-showcase.git
 git push -u origin main
 ```
 
-`KULLANICI/oyakm-showcase` ve SSH/HTTPS URL’yi kendi GitHub hesabınıza göre değiştirin.
+Use your own GitHub account and remote URL.
 
-## 3) Ana oyakm reposunda (isteğe bağlı)
-
-`showcase-public-pack/` klasörü `.gitignore` ile **izlenmiyor**. İsterseniz yalnızca `.gitignore` satırını `main`’e commit edersiniz (paket dosyaları commitlenmez):
-
-```bash
-cd /Volumes/destek/projects/oyakm
-git add .gitignore
-git commit -m "chore: ignore showcase-public-pack (ayrı repo)"
-git push origin main
-```
-
-## 4) Ekran görüntüleri
-
-PNG’leri `assets/screenshots/` içine koyduktan sonra **yeni repo**da:
+## 3) Optional screenshot update
 
 ```bash
 git add assets/screenshots/
@@ -48,36 +34,34 @@ git commit -m "docs(showcase): add sanitized showcase screenshots"
 git push
 ```
 
-## 5) Asıl repo değiştikçe showcase güncelleme akışı
-
-Asıl `oyakm` reposunda feature geliştirmeye devam edin. Showcase repo için sadece güvenli doküman/varlık güncellemesi taşıyın:
+## 4) Ongoing showcase update flow
 
 ```bash
-# showcase repo içinde
+# In showcase repository
 git checkout main
 git pull
 
-# sadece docs + güvenli görsel güncelle
+# Update only docs and safe assets
 git add README.md docs/ assets/screenshots/ .gitignore
 git status
 git commit -m "docs(showcase): refresh sanitized capabilities and architecture"
 git push
 ```
 
-Asla taşınmaması gerekenler: gerçek kod dosyaları, `.env`, Firebase servis hesapları, keystore, endpoint iç detayları, formül/algoritma detayları.
+Never include: source code, `.env`, service accounts, keystores, endpoint internals, formula or algorithm details.
 
-## 6) Push öncesi hızlı sızıntı kontrolü (showcase repo)
+## 5) Quick leak checks before push
 
 ```bash
-# şüpheli anahtar/desen taraması
+# Suspicious key patterns
 rg -n "AIza|BEGIN PRIVATE KEY|password|secret|token|firebase|keystore|GoogleService-Info|google-services" .
 
-# yanlışlıkla kod eklendi mi kontrolü
+# Optional check for accidental code snippets
 rg -n "class |function |import |package " docs README.md
 ```
 
-## 7) Periyodik sürümleme pratiği
+## 6) Release cadence
 
-- Tercih edilen ritim: haftalık showcase güncellemesi.
-- Kabul edilen ritim: büyük değişiklik yoksa iki haftada bir.
-- Commit mesaj standardı: `docs(showcase): ...`
+- Preferred rhythm: weekly showcase update.
+- Acceptable rhythm: bi-weekly if no major capability change.
+- Commit message standard: `docs(showcase): ...`

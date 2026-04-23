@@ -1,11 +1,12 @@
-# Screenshots (placeholders)
+# Screenshots (optional placeholders)
 
 ## Policy
 
 - **No** real user data, **no** production credentials in images.
 - Admin UI: **screenshots only** in public materials; live demo is **on request** with separate credentials (not stored in git).
+- Mobile store links can be used as the primary public reference; screenshots are optional support material.
 
-## Suggested set
+## Suggested set (optional)
 
 Place files under `assets/screenshots/` with descriptive names:
 
@@ -30,3 +31,4 @@ Place files under `assets/screenshots/` with descriptive names:
 
 - Görsellerde **gerçek kullanıcı verisi** ve **canlı şifre** olmasın.
 - Admin için public repoda yalnızca **ekran görüntüsü**; canlı demo **ayrı talep**.
+- Mobil mağaza linkleri ana public referans olarak kullanılabilir; ekran görüntüleri destekleyici ve opsiyoneldir.
