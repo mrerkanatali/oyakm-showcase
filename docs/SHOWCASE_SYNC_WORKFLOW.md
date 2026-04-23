@@ -59,3 +59,67 @@ dist/
 - Product/tech owner approves capability wording.
 - Security gate is mandatory before every public push.
 - Legal/commercial texts are published only after counsel review where required.
+
+---
+
+## Turkce
+
+Bu akisin amaci, kod veya secret sizdirmadan showcase dokumanlarini guncel tutmaktir.
+
+## Repolar
+
+- Private gelistirme reposu: `oyakm` (gercek kod tabani).
+- Public showcase reposu: `oyakm-showcase` (yalnizca dokuman ve sanitize varliklar).
+
+## Isletim modeli
+
+1. Feature gelistirmesini private repoda normal sekilde yap.
+2. Her anlamli surum/guncelleme icin sadece su katmanlari ayikla:
+   - Capability seviyesi degisiklikler,
+   - Mimari seviyesi degisiklikler,
+   - White-label surec notlari,
+   - Gerekiyorsa sanitize screenshot'lar.
+3. Bu guncellemeleri showcase repo dokumanlarina uygula.
+4. `SECURITY_SCOPE_MATRIX.md` guvenlik kapisi checklist'ini calistir.
+5. Sadece sanitize docs/assets commitleyip push et.
+
+## Neler kopyalanir / neler kopyalanmaz
+
+- Kopyalanir: Markdown dokumanlar, Mermaid diyagramlar, sanitize screenshot'lar.
+- Kopyalanmaz: Kaynak kod, config dosyalari, secret dosyalari, migration, deployment scriptleri.
+
+## Onerilen showcase `.gitignore`
+
+Sik sizinti noktalarini engelleyen deny-list kullan:
+
+```gitignore
+# Secrets and environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+
+# Build and temporary files
+node_modules/
+build/
+dist/
+.DS_Store
+```
+
+## Guncelleme periyodu
+
+- Minimum: Production etkili capability degisikligi sonrasi.
+- Tercih edilen: Haftalik update penceresi.
+- Kabul edilen: Buyuk degisiklik yoksa iki haftada bir.
+- Commit standardi: `docs(showcase): <short update summary>`.
+
+## Sorumluluk
+
+- Capability metnini product/tech owner onaylar.
+- Her public push oncesi guvenlik kapisi zorunludur.
+- Hukuki onay gerektiren ticari metinler counsel onayi sonrasi yayinlanir.

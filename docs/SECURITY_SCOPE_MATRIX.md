@@ -41,3 +41,49 @@ This document defines what can and cannot be published in the showcase repositor
 ## 5) Guiding rule
 
 Show what the platform can do, not how it is built internally.
+
+---
+
+## Turkce
+
+Bu dokuman, showcase reposunda nelerin yayinlanip nelerin kesinlikle yayinlanamayacagini tanimlar.
+
+## 1) Yayinlanabilir icerik
+
+- Yuksek seviye mimari diyagramlar.
+- Flutter, API, backend ve admin yetenek aciklamalari.
+- Semaya inmeyen genel veri akis anlatimi.
+- Kisisel veri, secret veya ic hostname icermeyen sanitize ekran goruntuleri.
+- Ticari ve white-label surec dokumanlari.
+
+## 2) Asla yayinlanmayacak icerik
+
+- Uygulama kaynak kodu (mobile, API, admin, worker, bridge).
+- Gercek formul, algoritma detayi veya implementasyon seviyesinde pseudo code.
+- Endpoint ic detaylari (tum route listesi, validator, auth ic mantigi).
+- Veritabani schema dump, migration, tablo/kolon seviyesinde yapi.
+- CI/CD ic detaylari, altyapi durum dosyalari, deployment secret'lari.
+- Kimlik bilgileri: API key, token, Firebase servis hesaplari, keystore, sifreler.
+- Herhangi bir musteri veya production verisi.
+
+## 3) Izinli temsil seviyesi
+
+| Alan | Showcase'te izinli | Showcase'te yasak |
+|------|--------------------|-------------------|
+| Flutter | Modul haritasi, UX yetenekleri, platform kapsami | Widget agaci, is mantigi, state kodu |
+| API | Sistemdeki rolu, entegrasyon yetenekleri, guvenlik yaklasimi ozeti | Gercek endpoint, payload kontrati, auth implementasyonu |
+| Backend | Operasyonel yetenekler, workflow ozeti | Worker kodu, kuyruk mantigi detaylari, cron ic isleyisi |
+| Admin | Ozellik gruplari, kullanim senaryolari | Panel kodu, form validation mantigi, privileged flow |
+| Hesaplayicilar | Kategori seviyesinde aciklama ve uyari metni | Formel detay, sabitler, edge-case mantigi |
+
+## 4) Her showcase guncellemesi oncesi guvenlik kapisi
+
+1. Kod dosyasi eklenmedigini dogrula.
+2. Secret tasiyan dosya bulunmadigini dogrula.
+3. Ekran goruntulerinin anonim oldugunu dogrula.
+4. Dokumanlarin implementasyon derinligine inmedigini dogrula.
+5. Private URL veya credential referansi olmadigini dogrula.
+
+## 5) Temel prensip
+
+Platformun ne yaptigini goster, nasil yapildigini degil.
