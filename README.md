@@ -39,7 +39,6 @@ See [docs/CAPABILITIES_OVERVIEW.md](docs/CAPABILITIES_OVERVIEW.md).
 ### White-label / deployment
 
 See [docs/WHITE_LABEL_CHECKLIST.md](docs/WHITE_LABEL_CHECKLIST.md).
-Buyer onboarding steps: [docs/CUSTOMER_ONBOARDING.md](docs/CUSTOMER_ONBOARDING.md).
 
 ### Commercial models
 
@@ -47,7 +46,7 @@ See [docs/COMMERCIAL.md](docs/COMMERCIAL.md).
 
 ### Security notice
 
-This repo must remain **free of** API keys, Firebase service accounts, keystores, database passwords, and real client data. If you find a leak, open a private report to the maintainer.
+This repo must remain **free of** API keys, Firebase service accounts, keystores, database passwords, and real client data. If you notice sensitive material here, please report it responsibly to the repository owner.
 
 ---
 
@@ -82,7 +81,6 @@ Bkz. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 ### White-label / kurulum
 
 Bkz. [docs/WHITE_LABEL_CHECKLIST.md](docs/WHITE_LABEL_CHECKLIST.md).
-Müşteri onboarding adımları: [docs/CUSTOMER_ONBOARDING.md](docs/CUSTOMER_ONBOARDING.md).
 
 ### Ticari modeller
 
@@ -90,14 +88,47 @@ Bkz. [docs/COMMERCIAL.md](docs/COMMERCIAL.md).
 
 ### Güvenlik
 
-API anahtarları, Firebase servis hesabı, keystore, veritabanı şifresi ve gerçek müşteri verisi bu repoda **bulunmamalıdır**.
+API anahtarları, Firebase servis hesabı, keystore, veritabanı şifresi ve gerçek müşteri verisi bu repoda **bulunmamalıdır**.  
 Yayın kapsamı ve güvenlik sınırları için bkz. [docs/SECURITY_SCOPE_MATRIX.md](docs/SECURITY_SCOPE_MATRIX.md).
 
 ---
 
-## Screenshots
+## Screenshots / Ekran görüntüleri
 
-Optional. If you want to include them, place anonymised PNGs under `assets/screenshots/` and list them in [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md).
+Sanitised captures only — no credentials. **EN:** illustrative product views. **TR:** anonimleştirilmiş ürün görünümleri.  
+File list and policy: [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md).
+
+**EN:** Mobile — main · **TR:** Mobil — ana ekran
+
+![](assets/screenshots/mobile-main.png)
+
+**EN:** Mobile — sidebar · **TR:** Mobil — yan menü
+
+![](assets/screenshots/mobile-sidebar.png)
+
+**EN:** Mobile — calculation tools · **TR:** Mobil — hesaplama araçları
+
+![](assets/screenshots/mobile-calculationtools.png)
+
+**EN:** Mobile — music player · **TR:** Mobil — müzik çalar
+
+![](assets/screenshots/mobile-music-player.png)
+
+**EN:** Mobile — places (filter) · **TR:** Mobil — yerler (filtre)
+
+![](assets/screenshots/mobile-places-filter-selection.png)
+
+**EN:** Mobile — places (detail) · **TR:** Mobil — yerler (detay)
+
+![](assets/screenshots/mobile-places-info-actions.png)
+
+**EN:** Mobile — Q&A · **TR:** Mobil — soru-cevap
+
+![](assets/screenshots/mobile-q%26a.png)
+
+**EN:** Web — admin panel (illustrative) · **TR:** Web — yönetim paneli (örnek)
+
+![](assets/screenshots/web-admin-panel.png)
 
 ---
 

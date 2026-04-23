@@ -1,34 +1,55 @@
-# Screenshots (optional placeholders)
+# Screenshots
 
 ## Policy
 
 - **No** real user data, **no** production credentials in images.
 - Admin UI: **screenshots only** in public materials; live demo is **on request** with separate credentials (not stored in git).
-- Mobile store links can be used as the primary public reference; screenshots are optional support material.
+- Mobile store links are the primary public install reference; screenshots support the story only.
 
-## Suggested set (optional)
+## Current files (`assets/screenshots/`)
 
-Place files under `assets/screenshots/` with descriptive names:
+| File | Description (EN) |
+|------|--------------------|
+| `mobile-main.png` | Mobile home / main navigation |
+| `mobile-sidebar.png` | Sidebar / menu |
+| `mobile-calculationtools.png` | Calculation tools area (generic) |
+| `mobile-music-player.png` | In-app music player |
+| `mobile-places-filter-selection.png` | Places module — filter selection |
+| `mobile-places-info-actions.png` | Places module — detail / actions |
+| `mobile-q&a.png` | Q&A style screen |
+| `web-admin-panel.png` | Web admin panel (illustrative; blur sensitive fields before publishing updates) |
 
-| File (example) | Description |
-|------------------|-------------|
-| `mobile-home.png` | Mobile home / dashboard |
-| `mobile-news.png` | News list or detail |
-| `mobile-calc.png` | Calculator tool (generic) |
-| `web-home.png` | Public website home |
-| `admin-dashboard.png` | Admin landing (blur sensitive fields) |
-| `admin-editor.png` | Content editor (sample text only) |
-
-## Markdown embed (after images exist)
+## Markdown embed (examples)
 
 ```markdown
-![Mobile home](../assets/screenshots/mobile-home.png)
+![](../assets/screenshots/mobile-main.png)
 ```
 
 ---
 
 ## Türkçe
 
+## Kurallar
+
 - Görsellerde **gerçek kullanıcı verisi** ve **canlı şifre** olmasın.
 - Admin için public repoda yalnızca **ekran görüntüsü**; canlı demo **ayrı talep**.
-- Mobil mağaza linkleri ana public referans olarak kullanılabilir; ekran görüntüleri destekleyici ve opsiyoneldir.
+- Mağaza linkleri kurulum için ana referans; görseller destekleyicidir.
+
+## Mevcut dosyalar (`assets/screenshots/`)
+
+| Dosya | Açıklama (TR) |
+|-------|----------------|
+| `mobile-main.png` | Mobil ana ekran / gezinme |
+| `mobile-sidebar.png` | Yan menü |
+| `mobile-calculationtools.png` | Hesaplama araçları alanı (genel) |
+| `mobile-music-player.png` | Uygulama içi müzik çalar |
+| `mobile-places-filter-selection.png` | Yerler modülü — filtre seçimi |
+| `mobile-places-info-actions.png` | Yerler modülü — detay / aksiyonlar |
+| `mobile-q&a.png` | Soru-cevap tarzı ekran |
+| `web-admin-panel.png` | Web yönetim paneli (örnek; güncellemeden önce hassas alanları bulanıklaştırın) |
+
+## Markdown gömme (örnek)
+
+```markdown
+![](../assets/screenshots/mobile-main.png)
+```
