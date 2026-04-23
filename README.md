@@ -96,39 +96,40 @@ Yayın kapsamı ve güvenlik sınırları için bkz. [docs/SECURITY_SCOPE_MATRIX
 ## Screenshots / Ekran görüntüleri
 
 Sanitised captures only — no credentials. **EN:** illustrative product views. **TR:** anonimleştirilmiş ürün görünümleri.  
+**EN:** Images are **WebP** (long edge max 1200px) for faster README loads. **TR:** Görseller daha hızlı yük için **WebP**; uzun kenar en fazla **1200px**.  
 File list and policy: [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md).
 
 **EN:** Mobile — main · **TR:** Mobil — ana ekran
 
-![](assets/screenshots/mobile-main.png)
+![](assets/screenshots/mobile-main.webp)
 
 **EN:** Mobile — sidebar · **TR:** Mobil — yan menü
 
-![](assets/screenshots/mobile-sidebar.png)
+![](assets/screenshots/mobile-sidebar.webp)
 
 **EN:** Mobile — calculation tools · **TR:** Mobil — hesaplama araçları
 
-![](assets/screenshots/mobile-calculationtools.png)
+![](assets/screenshots/mobile-calculationtools.webp)
 
 **EN:** Mobile — music player · **TR:** Mobil — müzik çalar
 
-![](assets/screenshots/mobile-music-player.png)
+![](assets/screenshots/mobile-music-player.webp)
 
 **EN:** Mobile — places (filter) · **TR:** Mobil — yerler (filtre)
 
-![](assets/screenshots/mobile-places-filter-selection.png)
+![](assets/screenshots/mobile-places-filter-selection.webp)
 
 **EN:** Mobile — places (detail) · **TR:** Mobil — yerler (detay)
 
-![](assets/screenshots/mobile-places-info-actions.png)
+![](assets/screenshots/mobile-places-info-actions.webp)
 
 **EN:** Mobile — Q&A · **TR:** Mobil — soru-cevap
 
-![](assets/screenshots/mobile-q%26a.png)
+![](assets/screenshots/mobile-qa.webp)
 
 **EN:** Web — admin panel (illustrative) · **TR:** Web — yönetim paneli (örnek)
 
-![](assets/screenshots/web-admin-panel.png)
+![](assets/screenshots/web-admin-panel.webp)
 
 ---
 
