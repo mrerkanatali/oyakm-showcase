@@ -1,0 +1,21 @@
+# Secrets and environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Build and temporary files
+node_modules/
+build/
+dist/
+tmp/
